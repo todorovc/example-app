@@ -17,7 +17,7 @@ agent {
         app = docker.build("todorovc/example-app")
     }
     
-    stage('Test) {
+    stage('Test') {
         
       app.inside {
           sh 'npm test'  
