@@ -6,6 +6,9 @@ node {
 
         checkout scm
     }
+agent {
+    label 'docker' 
+  }
 
     stage('Build image') {
         /* This builds the actual image; synonymous to
